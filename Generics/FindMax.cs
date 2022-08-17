@@ -42,7 +42,23 @@ namespace Generics
             }
             return 0;
         }
+        public string FindMaxString(string First, string Second, string Third)
+        {
+            if (First.CompareTo(Second) > 0 && First.CompareTo(Third) > 0)
+            {
+                return First;
+            }
+            if (Second.CompareTo(First) > 0 && Second.CompareTo(Third) > 0)
+            {
+                return Second;
+            }
+            if (Third.CompareTo(First) > 0 && Third.CompareTo(Second) > 0)
+            {
 
+                return Third;
+            }
+            return null;
+        }
     }
 }
 
