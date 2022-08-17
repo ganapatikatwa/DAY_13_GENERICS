@@ -10,12 +10,13 @@ namespace Generics
             FindMax obj1 = new FindMax();
             FindMax obj2 = new FindMax();
             FindMax obj3 = new FindMax();
+
             while (check)
             {
                 Console.Write("Select Option:\n" +
-                    "1)Find Integer Maximum Number\n " +
+                    "1)Find Integer Maximum Number\n" +
                     "2)Find Float Maximum Number\n" +
-                    "3)Find String Maximum\n");
+                    "3)Find String Maximum\n"); 
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -27,14 +28,14 @@ namespace Generics
                         Console.WriteLine("-----------------------------------");
                         break;
                     case 2:
-                        float result2 = obj2.FindMaxFloat(4.3f, 3.2f, 2.7f);
+                        float result2 = obj2.FindMaxInteger(4.3f, 3.2f, 2.7f);
                         Console.WriteLine(result2);
                         Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Maximum Number is:" + result2);// To display Maximum Number
                         Console.WriteLine("-----------------------------------");
                         break;
                     case 3:
-                        string result3 = obj3.FindMaxString("Raj", "Ravi", "Ram");
+                        string result3 = obj3.FindMaxInteger("Raj", "Ravi", "Ram");
                         Console.WriteLine(result3);
                         Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Maximum Number is:" + result3);// To display Maximum Number
