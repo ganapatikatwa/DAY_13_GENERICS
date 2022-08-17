@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    public class FindMax
-    {
-        public T FindMaxInteger<T>(T First, T Second, T Third)where T:IComparable
+    public class FindMax<T> where T : IComparable
+    { public T First, Second, Third;
+        public FindMax(T First, T Second, T Third)
+        {
+            this.First= First;
+            this.Second = Second;
+            this.Third = Third;
+
+         }
+        public T FindMaxInteger(T First, T Second, T Third)
         {
             if (First.CompareTo(Second) > 0 && First.CompareTo(Third) > 0)
             {
@@ -28,5 +35,3 @@ namespace Generics
         
     }
 }
-
-

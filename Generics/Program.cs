@@ -7,9 +7,7 @@ namespace Generics
         public static void Main(string[] args)
         {
             bool check = true;
-            FindMax obj1 = new FindMax();
-            FindMax obj2 = new FindMax();
-            FindMax obj3 = new FindMax();
+            FindMax obj1 = new FindMax;
 
             while (check)
             {
@@ -21,21 +19,21 @@ namespace Generics
                 switch (option)
                 {
                     case 1:
-                        int result = obj1.FindMaxInteger(4, 3, 2);
+                        int result = obj1.FindMax(4, 3, 2);
                         Console.WriteLine(result);
                         Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Maximum Number is:" + result);// To display Maximum Number
                         Console.WriteLine("-----------------------------------");
                         break;
                     case 2:
-                        float result2 = obj2.FindMaxInteger(4.3f, 3.2f, 2.7f);
+                        float result2 = obj1.FindMax(4.3f, 3.2f, 2.7f);
                         Console.WriteLine(result2);
                         Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Maximum Number is:" + result2);// To display Maximum Number
                         Console.WriteLine("-----------------------------------");
                         break;
                     case 3:
-                        string result3 = obj3.FindMaxInteger("Raj", "Ravi", "Ram");
+                        string result3 = obj1.FindMax("Raj", "Ravi", "Ram");
                         Console.WriteLine(result3);
                         Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Maximum Number is:" + result3);// To display Maximum Number
